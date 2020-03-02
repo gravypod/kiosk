@@ -1,0 +1,37 @@
+{
+    "name": "viewport",
+    "version": "0.0.2",
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gravypod/console.git"
+    },
+    "author": "Joshua Katz <admin@joshuakatz.me>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gravypod/console/issues"
+    },
+    "homepage": "https://github.com/gravypod/console#readme",
+    "scripts": {
+        "start": "electron main.js",
+        "win32": "electron-packager . viewport --platform=win32 --arch=ia32 --force",
+        "win64": "electron-packager . viewport --platform=win32 --arch=x64 --force",
+        "linux32": "electron-packager . viewport --platform=linux --arch=ia32 --force",
+        "linux64": "electron-packager . viewport --platform=linux --arch=x64 --force",
+        "osx": "electron-packager . viewport --platform=darwin --arch=x64 --force",
+        "build": "electron-packager . --all --force"
+    },
+    "devDependencies": {
+        "electron-prebuilt": "1.4.13",
+        "electron-packager": "6.0.0",
+        "basel-cli": "*",
+        "jquery": "2.2.4",
+        "angular": "1.5.1",
+        "angular-route": "1.5.1",
+        "angular-utils-pagination": "0.11.0"
+    },
+    "titel": "viewport",
+    "database": "database",
+    "title": "viewport",
+    "type": "simple"
+}

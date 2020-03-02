@@ -1,0 +1,56 @@
+[Distribution]
+Distribution=ubuntu
+Release=eoan
+Repositories=main universe multiverse
+Mirrors=
+	http://mirror.enzu.com/ubuntu/
+	http://mirror.math.princeton.edu/pub/ubuntu/
+	http://mirrors.xtom.com/ubuntu/
+	http://mirror.cs.unm.edu/archive/
+	http://mirror.nodesdirect.com/ubuntu/
+
+[Output]
+Hostname=kiosk
+
+Bootable=true
+Format=gpt_ext4
+Compress=false
+
+[Packages]
+Packages=
+	dropbear
+	iproute2
+
+	ffmpeg
+	xorg
+
+	software-properties-common
+	ca-certificates
+	gconf-service
+	hicolor-icon-theme
+	libappindicator1
+	libasound2
+	libcanberra-gtk-module
+	libcurl4
+	libexif-dev
+	libgconf-2-4
+	libgl1-mesa-dri
+	libgl1-mesa-glx
+	libnspr4
+	libnss3
+	libpango1.0-0
+	libv4l-0
+	libxss1
+	libxtst6
+	wget
+
+	openbox
+	lightdm
+
+
+[Partitions]
+RootSize=32G
+ESPSize=1G
+SwapSize=1G
+HomeSize=1G
+SrvSize=8G

@@ -1,0 +1,2 @@
+echo "Starting app" && cd /srv/app/resources/app && DISPLAY=:0 /srv/app/viewport &
+
